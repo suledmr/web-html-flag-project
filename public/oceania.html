@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCEANIA</title>
+    <link rel="stylesheet" href="./oceania.css"></link>
+</head>
+<body>
+    <h1>OCEANIA</h1>
+    <p>Click on the flag to learn about the country and its capital.</p>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Australia.png" alt="Australia">
+        <div class="text">
+        <p>Australia</p>
+        <p>Canberra</p>
+        </div>         
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Fiji.png" alt="Fiji">
+        <div class="text">
+        <p>Fiji</p>
+        <p>Suva</p>
+        </div> 
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Kiribati.png" alt="Kiribati">
+        <div class="text">
+        <p>Kiribati</p>
+        <p>Tarawa</p>
+        </div> 
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Marshall-Islands.png" alt="Marshall Islands">
+        <div class="text">
+        <p>Marshall Islands</p>
+        <p>Majuro</p>
+        </div> 
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Micronesia.jpg" alt="Micronesia">
+        <div class="text">
+        <p>Micronesia</p>
+        <p>Palikir</p>
+        </div> 
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Nauru.png" alt="Nauru">
+        <div class="text">
+        <p>Nauru</p>
+        <p>No official capital</p>
+        </div> 
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/New-Zealand.png" alt="New Zealand">
+        <div class="text">
+        <p>New Zealand</p>
+        <p>Wellington</p>
+        </div> 
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Palau.png" alt="Palau">
+        <div class="text">
+        <p>Palau</p>
+        <p>Ngerulmud</p>
+        </div> 
+
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Papua-New-Guinea.png" alt="Papua New Guinea">
+        <div class="text">
+        <p>Papua New Guinea</p>
+        <p>Port Moresby</p>
+        </div> 
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Samoa.png" alt="Samoa">
+        <div class="text">
+        <p>Samoa</p>
+        <p>Apia</p>
+        </div> 
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Solomon-Islands.png" alt="Solomon Islands">
+        <div class="text">
+        <p>Solomon Islands</p>
+        <p>Honiara</p>
+        </div> 
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Tonga.png" alt="Tonga">
+        <div class="text">
+        <p>Tonga</p>
+        <p>Nukuʻalofa</p>
+        </div> 
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Tuvalu.png" alt="Tuvalu">
+        <div class="text">
+        <p>Tuvalu</p>
+        <p>Funafuti</p>
+        </div> 
+    </div>
+    <div class="flag-oceania" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/oceania/Vanuatu.png" alt="Vanuatu">
+        <div class="text">
+        <p>Vanuatu</p>
+        <p>Port Vila</p>
+        </div> 
+    </div>
+
+    <script>
+        function toggleContent(element) {
+            // Tıklanan container içindeki resim ve yazı öğelerini bulur
+            const image = element.querySelector('.image');
+            const text = element.querySelector('.text');
+
+            // Eğer resim görünürse (style.display boş veya 'block' ise)
+            if (image.style.display !== 'none') {
+                image.style.display = 'none';
+                text.style.display = 'block';
+            } else {
+                // Eğer yazı görünürse, yazıyı gizle ve resmi göster
+                text.style.display = 'none';
+                image.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>

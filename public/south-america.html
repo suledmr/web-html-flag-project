@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUTH AMERICA</title>
+    <link rel="stylesheet" href="./south-america.css"></link>
+</head>
+<body>
+    <h1>SOUTH AMERICA</h1>
+    <p>Click on the flag to learn about the country and its capital.</p>
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Argentina.png" alt="Argentina">
+        <div class="text">
+        <p>Argentina</p>
+        <p>Buenos Aires</p>
+        </div>
+    </div>
+
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Bolivia.png" alt="Bolivia">
+        <div class="text">
+        <p>Bolivia</p>
+        <p>Sucre</p>
+        </div>
+    </div>
+
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Brazil.png" alt="Brazil">
+        <div class="text">
+        <p>Brazil</p>
+        <p>Brasília</p>
+        </div>
+    </div>
+
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Chile.png" alt="Chile">
+        <div class="text">
+        <p>Chile</p>
+        <p>Santiago</p>
+        </div>
+    </div>
+
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Colombia.png" alt="Colombia">
+        <div class="text">
+        <p>Colombia</p>
+        <p>Bogotá</p>
+        </div>
+    </div>
+
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Ecuador.png" alt="Ecuador">
+        <div class="text">
+        <p>Ecuador</p>
+        <p>Quito</p>
+        </div>
+    </div>
+
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Guyana.png" alt="Guyana">
+        <div class="text">
+        <p>Guyana</p>
+        <p>Georgetown</p>
+        </div>
+    </div>
+
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Paraguay.png" alt="Paraguay">
+        <div class="text">
+        <p>Paraguay</p>
+        <p>Asunción</p>
+        </div>
+    </div>
+
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Peru.png" alt="Peru">
+        <div class="text">
+        <p>Peru</p>
+        <p>Lima</p>
+        </div>
+    </div>
+
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Suriname.png" alt="Suriname">
+        <div class="text">
+        <p>Suriname</p>
+        <p>Paramaribo</p>
+        </div>
+    </div>
+
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Uruguay.png" alt="Uruguay">
+        <div class="text">
+        <p>Uruguay</p>
+        <p>Montevideo</p>
+        </div>
+    </div>
+
+    <div class="flag-s-america" onclick="toggleContent(this)">
+        <img class="image" src="../assets/images/south-america/Venezuela.png" alt="Venezuela">
+        <div class="text">
+        <p>Venezuela</p>
+        <p>Caracas</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(element) {
+            // Tıklanan container içindeki resim ve yazı öğelerini bulur
+            const image = element.querySelector('.image');
+            const text = element.querySelector('.text');
+
+            // Eğer resim görünürse (style.display boş veya 'block' ise)
+            if (image.style.display !== 'none') {
+                image.style.display = 'none';
+                text.style.display = 'block';
+            } else {
+                // Eğer yazı görünürse, yazıyı gizle ve resmi göster
+                text.style.display = 'none';
+                image.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

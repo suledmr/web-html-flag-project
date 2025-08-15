@@ -1,0 +1,32 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #dcedfb;
+}
+h1{
+    background-color: #7ba6c9;
+}
+.flag-asia{
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    align-items: center;
+    margin: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+img{
+    display: block;
+    width: 200px;;
+    height: 150px;
+    margin: 15px;
+}
+.text {
+    font-size: 1.1rem;
+    color: rgb(0, 80, 159);
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    display: none;        
+    }
